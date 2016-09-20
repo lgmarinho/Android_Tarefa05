@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Android_Tarefa05</string>
+
+    <string-array name="arrays_ufs">
+        <item>Acre</item>
+        <item>Bahia</item>
+        <item>Maranhão</item>
+        <item>Rio de Janeiro</item>
+        <item>Rio Grande do Sul</item>
+        <item>São Paulo</item>
+    </string-array>
+
+    <string name="atualiza_tudo">Atualizar tudo?</string>
+    <string name="aceitar">aceitar os termos da aplicação?</string>
+
+
+    <string name="nome">Nome</string>
+    <string name="idade">Idade</string>
+    <string name="telefone">Telefone</string>
+
+    <string name="masc">Masculino</string>
+    <string name="femi">Feminino</string>
+
+    <string name="sim">Masculino</string>
+    <string name="nao">Feminino</string>
+</resources>

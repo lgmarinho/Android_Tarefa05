@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ucam.java.android.android_tarefa05.PrincipalActivity"
+    android:gravity="center_horizontal"
+    android:id="@+id/ufspinner">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeEditText"
+        android:hint="@string/nome"
+        android:layout_above="@+id/telefoneEditText"
+        android:layout_alignEnd="@+id/idadeEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idadeEditText"
+        android:hint="@string/idade"
+        android:layout_above="@+id/nomeEditText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefoneEditText"
+        android:hint="@string/telefone"
+        android:layout_above="@+id/spinner"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_above="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/arrays_ufs" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/radioGroup">
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton"
+            android:textOff="@string/nao"
+            android:textOn="@string/sim"
+            android:hint="@string/nao" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView"
+            android:hint="@string/atualiza_tudo"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masculino"
+        android:id="@+id/radioButton"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:hint="@string/masc"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feminino"
+        android:id="@+id/radioButton2"
+        android:layout_above="@+id/linearLayout"
+        android:layout_toEndOf="@+id/radioButton"
+        android:hint="@string/femi"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceitar termos"
+        android:id="@+id/checkBox"
+        android:hint="@string/aceitar"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toEndOf="@+id/radioButton" />
+
+</RelativeLayout>
